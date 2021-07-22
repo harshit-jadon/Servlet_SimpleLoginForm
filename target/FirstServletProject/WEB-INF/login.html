@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+  <style>
+
+    body{
+      background-image: url("https://mocah.org/uploads/posts/580446-adult-blur.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 1;
+    }
+    .main-content{
+      height: 280px;
+      width: 35%;
+      margin-top: 13%;
+      margin-left: 32%;
+      border-radius: 8px;
+      box-shadow: 5px 5px 10px 10px  rgba(0,0,0,0.3);
+    }
+    form{
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+    .row-content{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      margin-left: 40px;
+      margin-right: 30px;
+
+    }
+
+    label{
+      padding: 10px 10px 10px 0;
+      display: inline-block;
+      color: #42515f;
+    }
+
+    .text{
+      font: normal normal normal 16px/24px Roboto;
+      opacity: 1;
+      color: #42515f;
+    }
+
+    input{
+      width: 90%;
+      padding: 12px;
+      border: 1px solid #BDBDBD;
+      border-radius: 4px;
+      resize: vertical;
+      box-shadow: 5px 5px 10px 0px  rgba(0,0,0,0.3);
+    }
+    .submit-button{
+      width:90%;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+<div class="main-content">
+  <form action="LoginServlet" method="post">
+    <div class="row-content">
+      <label class="label text" for="user"></label>
+      <input type="text" name="user" placeholder="Enter username">
+    </div>
+    <div class="row-content">
+      <label class="label text" for="user"></label>
+      <input type="password" name="password" placeholder="Enter password">
+    </div>
+    <div class="row-content submit-button" >
+      <input class="submit-button" type="submit" value="Login">
+    </div>
+  </form>
+</div>
+</body>
+</html>
